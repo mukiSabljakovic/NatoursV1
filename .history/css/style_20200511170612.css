@@ -21,7 +21,7 @@ Dark green: #28b485
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 10px;
 }
 
 body {
@@ -103,11 +103,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-100%);
     }
 
     80% {
-        transform: translateX(-1rem);
+        transform: translateX(10px);
     }
 
     100% {
@@ -119,11 +119,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(100%);
     }
 
     80% {
-        transform: translateX(-1rem);
+        transform: translateX(-10px);
     }
 
     100% {
@@ -135,7 +135,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(-3rem);
+        transform: translateY(-30px);
     }
 
     100% {
@@ -148,20 +148,19 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 15px 40px;
     display: inline-block;
-    border-radius: 10rem;
+    border-radius: 100px;
     transition: all .2s;
-    font-size: 1.6rem;
 }
 
 .btn:hover {
-    transform: translateY(-.3rem);
+    transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .btn:active {
-    transform: translateY(-.1rem);
+    transform: translateY(-1px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
 }
 
@@ -176,7 +175,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;

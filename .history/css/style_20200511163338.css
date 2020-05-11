@@ -12,35 +12,27 @@ Dark green: #28b485
 /* Basic Reset */
 
 
-*,
-*::after,
-*::before {
+* {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 16px;
     line-height: 1.7;
     color: #777;
-    padding: 3rem;
-
-    box-sizing: border-box;
+    padding: 1.875rem;
 }
 
 .header {
     height: 95vh;
     background-image: linear-gradient(
         to right bottom, 
-        rgba(126, 213, 111, .8),
-        rgba(40, 180, 131, .8)),
+        rgba(126, 213, 111, .6),
+        rgba(40, 180, 133, .6)),
         url(../img/hero.jpg);
     background-size: cover;
     background-position: top;
@@ -49,21 +41,20 @@ body {
     position: relative;
 }
 
-.header__logo-box {
+.logo-box {
     position: absolute;
-    top: 4rem;
-    left: 4rem;
-    background: rgb(245, 246, 245);
-    border-radius: 100%;
+    top: 40px;
+    left: 40px;
+    background: white;
+    border-radius: 300%;
     display: flex;
-    padding: .4rem;
 }
 
-.header__logo {
-    height: 6.6rem;
+.logo {
+    height: 66px;
 }
 
-.header__text-box {
+.text-box {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -77,25 +68,25 @@ body {
 
     /* Fix animation shaking */
     backface-visibility: hidden;
-    margin-bottom: 6rem;
+    margin-bottom: 60px;
 }
 
-.heading-primary--main {
+.heading-primary-main {
     display: block;
-    font-size: 6rem;
+    font-size: 3.75rem;
     font-weight: 400;
-    letter-spacing: 3.5rem;
+    letter-spacing: 2.1875rem;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
 }
 
-.heading-primary--sub {
+.heading-primary-sub {
     display: block;
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    letter-spacing: 1.75rem;
+    letter-spacing: 1.0875rem;
 
     animation: moveInRight 1s ease-out;
 }
@@ -103,11 +94,11 @@ body {
 @keyframes moveInLeft {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-100%);
     }
 
     80% {
-        transform: translateX(-1rem);
+        transform: translateX(10px);
     }
 
     100% {
@@ -119,11 +110,11 @@ body {
 @keyframes moveInRight {
     0% {
         opacity: 0;
-        transform: translateX(10rem);
+        transform: translateX(100%);
     }
 
     80% {
-        transform: translateX(-1rem);
+        transform: translateX(-10px);
     }
 
     100% {
@@ -135,7 +126,7 @@ body {
 @keyframes moveInBottom {
     0% {
         opacity: 0;
-        transform: translateY(-3rem);
+        transform: translateY(-30px);
     }
 
     100% {
@@ -148,24 +139,23 @@ body {
 .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 15px 40px;
     display: inline-block;
-    border-radius: 10rem;
+    border-radius: 100px;
     transition: all .2s;
-    font-size: 1.6rem;
 }
 
 .btn:hover {
-    transform: translateY(-.3rem);
+    transform: translateY(-3px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
 }
 
 .btn:active {
-    transform: translateY(-.1rem);
+    transform: translateY(-1px);
     box-shadow: 0 10px 10px rgba(0, 0, 0, .2);
 }
 
-.btn--white {
+.btn-white {
     background-color: #fff;
     color: #777;
     position: relative;
@@ -176,7 +166,7 @@ body {
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 10rem;
+    border-radius: 100px;
     position: absolute;
     top: 0;
     left: 0;
@@ -184,7 +174,7 @@ body {
     transition: all .2s;
 }
 
-.btn--white::after {
+.btn-white::after {
     background-color: #fff;
 }
 
@@ -193,7 +183,7 @@ body {
     opacity: 0;
 }
 
-.btn--animated {
+.btn-animated {
     animation: moveInBottom .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
