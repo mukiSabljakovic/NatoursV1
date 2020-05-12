@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server",
+    "dev": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,14 +19,7 @@
   },
   "homepage": "https://github.com/mukiSabljakovic/NatoursV1#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "css-loader": "^3.5.3",
-    "postcss-loader": "^3.0.0",
-    "postcss-nested": "^4.2.1",
-    "postcss-simple-vars": "^5.0.2",
-    "style-loader": "^1.2.1",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.11.0"
+    "webpack-cli": "^3.3.11"
   }
 }

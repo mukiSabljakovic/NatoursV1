@@ -13,12 +13,9 @@ module.exports = {
         path: path.resolve(__dirname, './')
     },
     devServer: {
-        before: function(app, server) {
-            server._watch('./**/*.html')
-        },
         contentBase: path.join(__dirname, './'),
         hot: true,
-        port: 3001
+        port: 3000
     },
     mode: 'development',
     module: {
