@@ -9,7 +9,6 @@
 
 @import 'components/_button';
 
-@import 'layout/_grid.css';
 @import 'layout/_header';
 
 @import 'pages/_home';
