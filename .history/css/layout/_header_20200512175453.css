@@ -8,13 +8,13 @@
         url(../img/mountain.jpg);
 
         */
-        
+        /*
         background-image: linear-gradient(
             to right bottom, 
           rgba(17, 27, 15, 0.3),
             rgba(5, 15, 63, 0.9)),
             url(../img/mountain.jpg);
-            
+            */
     background-size: cover;
     background-position: top;
 
