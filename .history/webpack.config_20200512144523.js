@@ -1,0 +1,3 @@
+{
+    entry: './scripts/App.js'
+}
