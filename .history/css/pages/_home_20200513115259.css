@@ -14,7 +14,7 @@
         background-size: cover;
 
     transform: skewY(-7deg);
-    margin-top: -10rem;
+    margin-top: -20vh;
 
     & > * {
         transform: skewY(7deg);

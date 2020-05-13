@@ -11,12 +11,4 @@
       rgba(17, 27, 15, 0.3),
         rgba(5, 15, 63, 0.9)),
         url(../img/nat-4.jpg);
-        background-size: cover;
-
-    transform: skewY(-7deg);
-    margin-top: -10rem;
-
-    & > * {
-        transform: skewY(7deg);
-    }
 }
